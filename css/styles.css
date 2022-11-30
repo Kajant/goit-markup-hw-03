@@ -1,0 +1,182 @@
+:root {
+  --brand-blue: #2196f3;
+  --background-grey: #2f303a;
+  --light-grey: #757575;
+  --lighter-grey: #f5f4fa;
+  --darkest: #212121;
+  --white: #fff;
+  --black: #000;
+  --transparent-white: rgba(255, 255, 255, 60%);
+  --line-light: #ececec;
+  --leaflet-border: #eee;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--darkest);
+  background-color: var(--white);
+  letter-spacing: 0.03em;
+}
+button {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  color: var(--brand-blue);
+  line-height: 1.2;
+}
+.logo-upper {
+  color: var(--black);
+}
+.logo-bottom {
+  color: var(--white);
+}
+.line {
+  border-top: 1px solid var(--line-light);
+}
+.tel-mail a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--light-grey);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.tel-mail a:hover {
+  color: var(--brand-blue);
+}
+.tel-mail a:focus {
+  color: var(--brand-blue);
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--darkest);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover {
+  color: var(--brand-blue);
+}
+.nav-link:focus {
+  color: var(--brand-blue);
+}
+.slogan-background {
+  background-color: var(--background-grey);
+}
+.slogan {
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.4;
+  color: var(--white);
+  letter-spacing: 0.06em;
+}
+.button-order {
+  background-color: var(--brand-blue);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+}
+.advantage {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.advantage-text {
+  line-height: 1.7;
+  color: var(--light-grey);
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+.team-background {
+  background-color: var(--lighter-grey);
+}
+.member {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+.position {
+  font-size: 16px;
+  color: var(--light-grey);
+  line-height: 1.2;
+  text-align: center;
+}
+.bottom-background {
+  background-color: var(--background-grey);
+}
+.address-links a {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.7;
+}
+.address-links a:hover {
+  color: var(--brand-blue);
+}
+.address-links a:focus {
+  color: var(--brand-blue);
+}
+.bottom-address {
+  color: var(--white);
+}
+.bottom-tel-mail {
+  color: var(--transparent-white);
+}
+.filter button {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--darkest);
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  background-color: var(--lighter-grey);
+}
+.filter button:hover {
+  background-color: var(--brand-blue);
+  color: var(--white);
+}
+.filter button:focus {
+  background-color: var(--brand-blue);
+  color: var(--white);
+}
+.filter button:active {
+  background-color: var(--brand-blue);
+  color: var(--white);
+}
+.project-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-type {
+  font-size: 16px;
+  color: var(--light-grey);
+  line-height: 1.9;
+}
