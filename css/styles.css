@@ -21,6 +21,17 @@ button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -117,6 +128,9 @@ button {
 .team-background {
   background-color: var(--lighter-grey);
 }
+.member-bg {
+  background-color: var(--white);
+}
 .member {
   font-size: 16px;
   font-weight: 500;
@@ -179,4 +193,32 @@ button {
   font-size: 16px;
   color: var(--light-grey);
   line-height: 1.9;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.nav-container {
+  display: flex;
+  width: 254px;
+  justify-content: space-between;
+  align-items: center;
+}
+.tel-mail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slogan-box {
+  height: 600px;
+}
+.slogan-title {
+  width: 696px;
+  padding: 200px, 452px, 280px;
 }
