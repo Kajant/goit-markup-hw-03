@@ -21,6 +21,11 @@ button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1,
 h2,
 h3,
@@ -93,6 +98,7 @@ ul {
   background-color: var(--background-grey);
 }
 .slogan {
+  display: block;
   font-size: 44px;
   font-weight: 900;
   text-transform: uppercase;
@@ -100,6 +106,7 @@ ul {
   line-height: 1.4;
   color: var(--white);
   letter-spacing: 0.06em;
+  width: 696px;
 }
 .button-order {
   background-color: var(--brand-blue);
@@ -108,6 +115,11 @@ ul {
   color: var(--white);
   letter-spacing: 0.06em;
   line-height: 1.9;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 30px;
 }
 .advantage {
   font-weight: 700;
@@ -118,6 +130,7 @@ ul {
 .advantage-text {
   line-height: 1.7;
   color: var(--light-grey);
+  margin-top: 10px;
 }
 .section-title {
   font-size: 36px;
@@ -194,10 +207,6 @@ ul {
   color: var(--light-grey);
   line-height: 1.9;
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -216,9 +225,15 @@ ul {
   align-items: center;
 }
 .slogan-box {
-  height: 600px;
+  padding: 200px 252px;
+  text-align: center;
 }
-.slogan-title {
-  width: 696px;
-  padding: 200px, 452px, 280px;
+.advantage-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 94px;
+  gap: 30px;
+}
+.advantage-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
