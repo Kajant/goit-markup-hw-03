@@ -71,6 +71,11 @@ ul {
 .line {
   border-top: 1px solid var(--line-light);
 }
+.tel-mail {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 .tel-mail a {
   text-decoration: none;
   font-weight: 500;
@@ -140,11 +145,22 @@ ul {
   text-align: center;
   line-height: 1.2;
 }
-.team-background {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-jobs {
+  padding-bottom: 94px;
+}
+.team-box {
   background-color: var(--lighter-grey);
 }
-.member-bg {
+.member-box {
   background-color: var(--white);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .member {
   font-size: 16px;
@@ -161,8 +177,10 @@ ul {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.bottom-background {
+.bottom-box {
   background-color: var(--background-grey);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address-links a {
   font-style: normal;
@@ -246,11 +264,6 @@ ul {
   align-items: center;
   gap: 46px;
 }
-.tel-mail-container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
 .slogan-box {
   padding: 200px 252px;
   text-align: center;
@@ -258,14 +271,10 @@ ul {
 .advantage-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 94px;
   gap: 30px;
 }
 .advantage-item {
   flex-basis: calc((100% - 90px) / 4);
-}
-.jobs-margin {
-  margin-top: 94px;
 }
 .jobs-container {
   display: flex;
@@ -273,29 +282,11 @@ ul {
   margin-top: 50px;
   gap: 30px;
 }
-.jobs-item {
-  width: 370px;
-}
-.team-margin {
-  margin-top: 94px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   gap: 30px;
-}
-.team-item {
-  width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.foot-margin {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .address-margin {
   margin-top: 20px;
