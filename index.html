@@ -17,22 +17,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <a class="logo" href="index.html"
-          >Web<span class="logo-upper">Studio</span></a
-        >
-        <nav>
-          <ul class="list nav-container">
-            <li><a class="nav-link" href="index.html">Agencja</a></li>
-            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-link" href="#">Kontkat</a></li>
+    <header class="header-line">
+      <div class="container">
+        <nav class="menu-container">
+          <div class="logo-menu-container">
+            <a class="logo" href="index.html"
+              >Web<span class="logo-upper">Studio</span></a
+            >
+            <ul class="list nav-container">
+              <li><a class="nav-link" href="index.html">Agencja</a></li>
+              <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link" href="#">Kontkat</a></li>
+            </ul>
+          </div>
+          <ul class="tel-mail list tel-mail-container">
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
           </ul>
         </nav>
-        <ul class="tel-mail list tel-mail-container">
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-        </ul>
       </div>
     </header>
     <main>
@@ -78,18 +82,18 @@
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="container jobs-margin">
           <h2 class="section-title">Czym się zajmujemy</h2>
-          <ul class="list">
-            <li>
+          <ul class="list jobs-container">
+            <li class="jobs-item">
               <img
                 src="images/job1.jpg"
-                alt="Dłonie na klawiaturze kompuytera. Na ekranie widoczne linie tekstu."
+                alt="Dłonie na klawiaturze komputera. Na ekranie widoczne linie tekstu."
                 width="370"
                 height="294"
               />
             </li>
-            <li>
+            <li class="jobs-item">
               <img
                 src="images/job2.jpg"
                 alt="Smartfony na ekranie komputera."
@@ -97,7 +101,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="jobs-item">
               <img
                 src="images/job3.jpg"
                 alt="Paleta kolorów na ekranie tableta."
@@ -108,11 +112,11 @@
           </ul>
         </div>
       </section>
-      <section class="team-background">
+      <section class="team-background team-margin">
         <div class="container">
           <h2 class="section-title">Nasz zespół</h2>
-          <ul class="list">
-            <li class="member-bg">
+          <ul class="list team-container">
+            <li class="member-bg team-item">
               <img
                 src="images/productdesigner.jpg"
                 alt="John Doe - Product Designer"
@@ -122,7 +126,7 @@
               <h3 class="member">John Doe</h3>
               <p class="position">Product Designer</p>
             </li>
-            <li class="member-bg">
+            <li class="member-bg team-item">
               <img
                 src="images/frontenddev.jpg"
                 alt="John Doe - Frontend Developer"
@@ -132,7 +136,7 @@
               <h3 class="member">John Doe</h3>
               <p class="position">Frontend Developer</p>
             </li>
-            <li class="member-bg">
+            <li class="member-bg team-item">
               <img
                 src="images/marketing.jpg"
                 alt="John Doe - Marketing"
@@ -142,7 +146,7 @@
               <h3 class="member">John Doe</h3>
               <p class="position">Marketing</p>
             </li>
-            <li class="member-bg">
+            <li class="member-bg team-item">
               <img
                 src="images/uidesigner.jpg"
                 alt="John Doe - UI Designer"
@@ -156,13 +160,13 @@
         </div>
       </section>
     </main>
-    <footer class="bottom-background">
+    <footer class="bottom-background foot-margin">
       <div class="container">
         <a class="logo" href="index.html"
           >Web<span class="logo-bottom">Studio</span></a
         >
-        <address class="address-links">
-          <ul class="list">
+        <address class="address-links address-margin">
+          <ul class="list address-container">
             <li>
               <a
                 class="bottom-address"

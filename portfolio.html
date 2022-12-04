@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Rozwiązania dla biznesu" />
-    <title>Web Studio - portfolio</title>
+    <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,29 +17,33 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-line">
       <div class="container">
-        <a class="logo" href="index.html"
-          >Web<span class="logo-upper">Studio</span></a
-        >
-        <nav>
-          <ul class="list">
-            <li><a class="nav-link" href="index.html">Agencja</a></li>
-            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-link" href="#">Kontkat</a></li>
+        <nav class="menu-container">
+          <div class="logo-menu-container">
+            <a class="logo" href="index.html"
+              >Web<span class="logo-upper">Studio</span></a
+            >
+            <ul class="list nav-container">
+              <li><a class="nav-link" href="index.html">Agencja</a></li>
+              <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link" href="#">Kontkat</a></li>
+            </ul>
+          </div>
+          <ul class="tel-mail list tel-mail-container">
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
           </ul>
         </nav>
-        <ul class="tel-mail list">
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-        </ul>
       </div>
     </header>
     <main>
       <section class="filter">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="list">
+          <ul class="list filters-container">
             <li><button type="button">Wszystkie</button></li>
             <li><button type="button">Strony</button></li>
             <li><button type="button">Aplikacje</button></li>
@@ -47,7 +51,7 @@
             <li><button type="button">Marketing</button></li>
           </ul>
           <h2 class="visually-hidden">Portfolio</h2>
-          <ul class="list">
+          <ul class="list projects-container">
             <li>
               <img
                 src="images/project-1.jpg"
@@ -142,13 +146,13 @@
         </div>
       </section>
     </main>
-    <footer class="bottom-background">
+    <footer class="bottom-background foot-margin">
       <div class="container">
         <a class="logo" href="index.html"
           >Web<span class="logo-bottom">Studio</span></a
         >
-        <address class="address-links">
-          <ul class="list">
+        <address class="address-links address-margin">
+          <ul class="list address-container">
             <li>
               <a
                 class="bottom-address"
