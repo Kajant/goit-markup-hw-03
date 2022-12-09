@@ -17,27 +17,49 @@ body {
   background-color: var(--white);
   letter-spacing: 0.03em;
 }
-button {
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-ul {
+p {
   margin: 0;
   padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .visually-hidden {
   position: absolute;
@@ -51,9 +73,6 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.list {
-  list-style: none;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -75,23 +94,26 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-left: auto;
 }
-.tel-mail a {
-  text-decoration: none;
+.tel-mail-link {
   font-weight: 500;
   color: var(--light-grey);
   letter-spacing: 0.02em;
   line-height: 1.1;
   text-align: right;
 }
-.tel-mail a:hover {
+.tel-mail-link:hover {
   color: var(--brand-blue);
 }
-.tel-mail a:focus {
+.tel-mail-link:focus {
   color: var(--brand-blue);
+}
+.nav {
+  display: flex;
+  align-items: center;
 }
 .nav-link {
-  text-decoration: none;
   color: var(--darkest);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -102,11 +124,12 @@ ul {
 .nav-link:focus {
   color: var(--brand-blue);
 }
-.slogan-background {
+.slogan-section {
   background-color: var(--background-grey);
+  padding: 200px 0;
+  text-align: center;
 }
 .slogan {
-  display: block;
   font-size: 44px;
   font-weight: 900;
   text-transform: uppercase;
@@ -115,6 +138,7 @@ ul {
   color: var(--white);
   letter-spacing: 0.06em;
   width: 696px;
+  margin: 0 auto;
 }
 .button-order {
   background-color: var(--brand-blue);
@@ -124,9 +148,7 @@ ul {
   letter-spacing: 0.06em;
   line-height: 1.9;
   padding: 10px 41px;
-  border: 0;
-  border-radius: 4px;
-  margin-top: 30px;
+  margin: 30px auto 0;
 }
 .advantage {
   font-weight: 700;
@@ -145,13 +167,6 @@ ul {
   text-align: center;
   line-height: 1.2;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-jobs {
-  padding-bottom: 94px;
-}
 .team-box {
   background-color: var(--lighter-grey);
 }
@@ -162,20 +177,20 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.member-text {
+  padding: 30px 0;
+  text-align: center;
+}
 .member {
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
   line-height: 1.2;
-  margin-top: 30px;
 }
 .position {
   font-size: 16px;
   color: var(--light-grey);
   line-height: 1.2;
-  text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 .bottom-box {
   background-color: var(--background-grey);
@@ -183,8 +198,6 @@ ul {
   padding-bottom: 60px;
 }
 .address-links a {
-  font-style: normal;
-  text-decoration: none;
   line-height: 1.7;
 }
 .address-links a:hover {
@@ -199,30 +212,28 @@ ul {
 .bottom-tel-mail {
   color: var(--transparent-white);
 }
-.filter button {
+.filter-button {
   font-size: 16px;
   font-weight: 500;
   color: var(--darkest);
   letter-spacing: 0.03em;
   line-height: 1.6;
   background-color: var(--lighter-grey);
-  padding: 6px 22px;
-  border: 0;
-  border-radius: 4px;
+  padding: 6px 25px;
 }
-.filter button:hover {
+.filter-button:hover:hover {
   background-color: var(--brand-blue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.filter button:focus {
+.filter-button:focus:focus {
   background-color: var(--brand-blue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.filter button:active {
+.filter-button:active:active {
   background-color: var(--brand-blue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -233,15 +244,15 @@ ul {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px;
-  border-left: 1px solid var(--leaflet-border);
-  border-right: 1px solid var(--leaflet-border);
 }
 .project-type {
   font-size: 16px;
   color: var(--light-grey);
   line-height: 1.9;
-  padding: 0px 24px 20px;
+  margin-top: 4px;
+}
+.project-text {
+  padding: 20px 24px;
   border-left: 1px solid var(--leaflet-border);
   border-right: 1px solid var(--leaflet-border);
   border-bottom: 1px solid var(--leaflet-border);
@@ -250,23 +261,15 @@ ul {
   display: flex;
   align-items: center;
   height: 80px;
-  justify-content: space-between;
 }
 .header-line {
   border-bottom: 1px solid var(--line-light);
-}
-.logo-menu-container {
-  display: flex;
-  gap: 93px;
 }
 .nav-container {
   display: flex;
   align-items: center;
   gap: 46px;
-}
-.slogan-box {
-  padding: 200px 252px;
-  text-align: center;
+  margin-left: 93px;
 }
 .advantage-container {
   display: flex;
@@ -291,23 +294,19 @@ ul {
 .address-margin {
   margin-top: 20px;
 }
-.address-container {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+.address-container li:not(:last-child) {
+  margin-bottom: 9px;
 }
-.filters-container {
+
+.filter {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin-top: 33px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 34px;
-  margin-bottom: 155px;
 }
